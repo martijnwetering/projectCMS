@@ -1,0 +1,106 @@
+body {
+            padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+        }
+
+.brand {
+    
+}
+
+a.plain:link {
+    color: #333;
+    text-decoration: none;
+}
+
+a.plain:active {
+    color: #333;
+    text-decoration: none;
+}
+
+a.plain:visited {
+    color: #333;
+    text-decoration: none;
+}
+
+a.plain:hover {
+    color: #333;
+    text-decoration: none;
+}
+
+.status-bar {
+    height: 60px;
+}
+
+.about-icon {
+    float: left;
+    margin-right: 12px;
+}
+
+.footer {
+    margin-top: 30px;
+    padding-top: 10px;
+    color: #999;
+    border-top: solid 1px #ddd;
+}
+
+.footer > p {
+    padding-top: 4px !important;
+    padding-bottom: 4px !important;
+}
+
+h5 {
+    width: 100%;
+    white-space: nowrap;
+    margin-bottom: 4px;
+}
+
+.thumbnail {
+    min-width: 260px;
+}
+
+.thumbnails li {
+    margin-left: 0px !important;
+    margin-right: 20px !important;
+}
+
+legend {
+    
+}
+
+.home-hero {
+    font-size: 36; 
+    margin-top: -19px;
+    padding: 180px;
+    text-align : center;  
+}
+
+.home-hero h3 {
+    text-align: left;
+}
+
+.home-hero div {
+    margin:30px auto;
+    width:250px;
+}
+
+.home-hero form {
+    
+    text-align: left;
+}
+@media only screen and ( max-width : 1000px ) {
+    .home-hero {
+        padding:100px;
+    }
+}
+
+@media only screen and ( max-width : 480px ) {
+    .home-hero {
+        padding:32px;
+    }
+}
+
+
+.home-hero .btn {
+    width: 160px;
+    margin: 10px 4px;
+}
+

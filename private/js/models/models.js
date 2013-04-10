@@ -1,6 +1,6 @@
 window.Project = Backbone.Model.extend({
 
-    urlRoot: "cms/projects",
+    urlRoot: "/projects",
 
     idAttribute: "_id",
 
@@ -58,6 +58,6 @@ window.ProjectCollection = Backbone.Collection.extend({
 
     model: Project,
 
-    url: "cms/projects"
+    url: "/projects"
 
 });

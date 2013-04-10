@@ -1,11 +1,11 @@
 var AppRouter = Backbone.Router.extend({
 
     routes: {
-        ""                          : "home",
-        "cms/projects"	            : "list",
-        "cms/projects/page/:page"	: "list",
-        "cms/projects/add"          : "addProject",
-        "cms/projects/:id"          : "projectDetails"      
+        ""                      : "home",
+        "projects"	            : "list",
+        "projects/page/:page"	: "list",
+        "projects/add"          : "addProject",
+        "projects/:id"          : "projectDetails"      
     },
 
     initialize: function () {

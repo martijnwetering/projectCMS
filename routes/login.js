@@ -13,7 +13,7 @@ exports.login = function(req, res) {
 	console.log("loggin");
 	if (post.user == 'admin' && post.password == 'admin') {
 		req.session.user_id = post.user;
-	    res.redirect('#cms/projects');
+	    res.redirect('/cms/');
 	} else {
 	    res.send('Bad user/pass', post.user);
 	}

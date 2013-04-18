@@ -10,7 +10,7 @@ var Project = new Schema({
     instruction: 	String,
     expertise: 		String,
     description: 	String,
-    picture: 		String
+    pictures: 		[ String ]
 });
 
 mongoose.model( 'Project', Project );

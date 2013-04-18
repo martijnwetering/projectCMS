@@ -42,15 +42,16 @@ window.Project = Backbone.Model.extend({
     },
 
     defaults: {
-        _id: null,
-        name: "Name Unknown",
-        year: 0000,
-        client: "Client Unknown",
-        context: "Context Unknown",
-        instruction: "Instruction Unknown",
-        expertise: "Expertise Unknown",
-        discription: "Project discription Unknown",
-        picture: null
+          _id: null
+        , name: "Name Unknown"
+        , year: 0000
+        , client: "Client Unknown"
+        , context: "Context Unknown"
+        , instruction: "Instruction Unknown"
+        , expertise: "Expertise Unknown"
+        , discription: "Project discription Unknown"
+      //  , picture: null
+        , pictures: ["generic.jpg"]
     }
 });
 

@@ -104,3 +104,11 @@ legend {
     margin: 10px 4px;
 }
 
+
+.dropzone {
+    width:500px;
+    height:500px;
+    background-color: black;
+}
+
+

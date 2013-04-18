@@ -48,6 +48,24 @@ window.utils = {
 
     hideAlert: function() {
         $('.alert').hide();
-    }
+    },
 
+    showLoading: function(text, progress) {
+       // $('.loading').removeClass("");
+        //$('.loading').html('<strong>' + title + '</strong>' + text);
+        $('.progressName').html(text);
+        $('.loading-wrapper').show();
+        if(progress){
+             $('.progress').show();
+        }
+    },
+
+    hideLoading: function() {
+        $('.loading').hide();
+    },
+
+    showProgress: function(file, progress) {
+        $('.progressImageName').html('' + file);
+        $('.bar').css('width', progress);  
+    }
 };

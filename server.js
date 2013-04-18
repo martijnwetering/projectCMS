@@ -4,8 +4,9 @@ var path = require('path');
 //mongoose
 require( './db' );
 
-var	project = require('./routes/projects'); 
-var	login = require('./routes/login'); 
+var	project = 	require('./routes/projects'); 
+var upload =	require('./routes/upload');
+var	login = 	require('./routes/login');
 
 var app = express();
 
@@ -25,6 +26,9 @@ app.configure(function () {
 
 app.post('/login', login.login);
 app.get('/cms/logout', login.logout);
+
+app.post('/image-upload', upload.saveImage);
+app.post('/image-delete', upload.deleteImage);
 
 app.get('/projects', project.findAll);
 app.get('/projects/:id', project.findById);

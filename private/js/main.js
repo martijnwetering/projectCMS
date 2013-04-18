@@ -36,12 +36,14 @@ var AppRouter = Backbone.Router.extend({
             $("#content").html(new ProjectView({model: project}).el);
         }});
         this.headerView.selectMenuItem();
+
     },
 
 	addProject: function() {
         var project = new Project();
         $('#content').html(new ProjectView({model: project}).el);
         this.headerView.selectMenuItem('add-menu');
+        project.set("pictures", ["generic.jpg"]);
 	}
 });
 

@@ -39,7 +39,7 @@ exports.updateProject = function( req, res) {
 	Projects.update({'_id':new BSON.ObjectID(id) }, project, {safe:true}, function(err, result) {
 		if(err) {
 			console.log("Error updating project: " + err);
-			result.send({'error': 'An error occured'});
+			res.send({'error': 'An error occured'});
 		} else {
 			console.log(' ' + result + ' document(s) updated');
 			res.send(project);
@@ -57,6 +57,9 @@ exports.deleteProject = function(req, res) {
 			console.log('' + result + ' document(s) deleted');
 			res.send(req.body);
 		}
+		////todo, end request in remove function
+		res.end();
 	});
+	res.end();
 }
 
